@@ -1,0 +1,138 @@
+/* global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+}
+
+section {
+  width: 95%;
+  max-width: 375px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 4rem 0;
+}
+.pattern {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  max-width: 575px;
+}
+.slide-container {
+  position: relative;
+}
+.btn-container {
+  background-color: #fff;
+  padding: 10px 16px 8px 16px;
+  display: flex;
+  gap: 2rem;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 33%);
+}
+.btn-container img {
+  cursor: pointer;
+}
+.main-img {
+  width: 300px;
+}
+
+.info {
+  position: relative;
+  padding: 2rem 0;
+}
+.quote {
+  position: absolute;
+  width: 4rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+p {
+  color: hsl(240, 38%, 20%);
+  font-weight: 300;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 2rem;
+}
+.info-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+h3 {
+  color: hsl(240, 38%, 20%);
+  font-size: 16px;
+}
+.grey {
+  font-size: 14px;
+  color: hsl(240, 18%, 77%);
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  section {
+    width: 90%;
+    max-width: 1440px;
+  }
+  .info {
+    grid-column: 1 / 2;
+  }
+  .img-container {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  p {
+    font-size: 24px;
+    text-align: left;
+    line-height: 2.5rem;
+    max-width: 30rem;
+  }
+  .info-footer {
+    margin-top: 2rem;
+    display: flex;
+    text-align: left;
+    gap: 10px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .grey {
+    font-size: 20px;
+  }
+  .main-img {
+    width: 400px;
+  }
+  .quote {
+    left: 10rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(240, 18%, 77%);
+}
+.attribution a {
+  color: hsl(240, 38%, 20%);
+}
